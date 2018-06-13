@@ -408,7 +408,7 @@ But we can see that the components of this kernel add up to nine. So we need to 
 
 Instead of using an all around averaging filter, we may want to filter out blurs in image and better preserves the edges in it. For that, we use ganssian blur. This is perhaps the most frequently used low-pass filter in computer vision applications.
 
-<img src='images/gaussian_blur.png' height='350', width='400'>
+<img src='images/gaussian_blur.png', height='350', width='400'/>
 
 It is essentially a weighted average that gives the most weight to the center pixel but also takes into account the surrounding pixels, more so depending on how close they are to the center. 
 
@@ -416,7 +416,7 @@ It is essentially a weighted average that gives the most weight to the center pi
 
 We have seen the importance of using both low-pass and high-pass filters for accurate edge detection. But even with these used together, edge detection is still a very complex problem.
 
-<img src='images/edge_detection_series.png'>
+<img src='images/edge_detection_series.png'/>
 
 We have to think about 
 
@@ -438,18 +438,18 @@ Hysteresis is a double thresholding process.
 
 Let's see an example taking a one pixel wide cross-section of an image. The curve represents the level of intensity in edges where the peaks are very strong edges.
 
-<img src='images/cross_section.png'>
+<img src='images/cross_section.png'/>
 
 To perform hysteresis:
 
 * We define a high threshold that allows these strong edges to pass through. 
 * We also use a second low threshold. Any edge below this low threshold is considered weak and discarded.
 
-<img src='images/cross_section_2.png'>
+<img src='images/cross_section_2.png'/>
 
 * An edge whose strength falls in between this low threshold and the high threshold will be kept only when it is connected to another strong edge.
 
-<img src='images/cross_section_3.png'>
+<img src='images/cross_section_3.png'/>
 
 This way Canny 
 
@@ -464,6 +464,6 @@ We learned about treating images as functions so that we could perform operation
 
 Next, we'll see how this all fits together with the rest of the pipeline and move on to learning about and Selecting Areas of Interest using image segmentation techniques. Then we'll move on to more complex computer vision topics and object recognition!
 
-<img src='images/computer_vision_pipeline.png'>
+<img src='images/computer_vision_pipeline.png'/>
 
 
